@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/savoisn/tennis-kata-elixir.svg?branch=master)](https://travis-ci.com/savoisn/tennis-kata-elixir)
+
 # Tennis
 
 Code Kata for Devoxx France Hands on Elixir
