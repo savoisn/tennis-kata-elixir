@@ -12,6 +12,8 @@ defmodule Score do
       :world
 
   """
+  import Match
+
   def hello do
     :world
   end
@@ -30,14 +32,12 @@ defmodule Score do
   end
 
   def speak(score_one, score_two, :notequal)
-      when score_one >= 4 and abs(score_one - score_two) >= 2 and
-             score_one > score_two do
+      when player_one_won?(score_one, score_two) do
     "PlayerOne Won"
   end
 
   def speak(score_one, score_two, :notequal)
-      when score_one >= 4 and abs(score_one - score_two) >= 2 and
-             score_one < score_two do
+      when player_two_won?(score_one, score_two) do
     "PlayerTwo Won"
   end
 
