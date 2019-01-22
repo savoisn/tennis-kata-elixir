@@ -4,6 +4,16 @@
 
 Code Kata for Devoxx France Hands on Elixir
 
+add the test watch dependencies in mix.exs
+```
+  defp deps do
+    [
+      ...
+      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false}
+      ...
+    ]
+```
+
 running the test watcher
 
 ```
